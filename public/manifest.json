@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Twitdown",
-  "version": "0.1.0",
-  "description": "My Chrome Extension",
+  "version": "1.0.0",
+  "description": "A simple Twitter video/GIF extractor!",
   "icons": {
     "16": "icons/icon_16.png",
     "32": "icons/icon_32.png",
@@ -10,27 +10,8 @@
     "128": "icons/icon_128.png"
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
+    "scripts": ["background.js"]
   },
-  "browser_action": {
-    "default_title": "Twitdown",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "storage"
-  ],
-  "content_scripts": [
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "run_at": "document_idle",
-      "js": [
-        "contentScript.js"
-      ]
-    }
-  ]
+  "browser_action": {},
+  "permissions": ["tabs", "http://*/", "https://*/"]
 }
