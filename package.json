@@ -1,20 +1,30 @@
 {
-  "name": "twitdown",
-  "version": "0.1.0",
-  "description": "My Chrome Extension",
-  "private": true,
-  "scripts": {
-    "watch": "webpack --mode=development --watch --config config/webpack.config.js",
-    "build": "webpack --mode=production --config config/webpack.config.js"
-  },
-  "devDependencies": {
-    "copy-webpack-plugin": "^6.4.1",
-    "css-loader": "^4.3.0",
-    "file-loader": "^6.2.0",
-    "mini-css-extract-plugin": "^0.10.1",
-    "size-plugin": "^2.0.2",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-merge": "^5.8.0"
-  }
+    "name": "twitdown",
+    "version": "1.0.1",
+    "description": "A Twitter video/GIF extractor extension for Chrome!",
+    "author": {
+        "name": "newtykins",
+        "url": "https://newtt.me/"
+    },
+    "private": true,
+    "scripts": {
+        "watch": "webpack --mode=development --watch --config config/webpack.config.js",
+        "build": "webpack --mode=production --config config/webpack.config.js",
+        "lint": "prettier src --write"
+    },
+    "devDependencies": {
+        "@types/cheerio": "^0.22.31",
+        "@types/chrome": "^0.0.178",
+        "@types/common-tags": "^1.8.1",
+        "@types/node": "^17.0.17",
+        "copy-webpack-plugin": "^6.4.1",
+        "css-loader": "^4.3.0",
+        "file-loader": "^6.2.0",
+        "mini-css-extract-plugin": "^0.10.1",
+        "prettier": "^2.5.1",
+        "size-plugin": "^2.0.2",
+        "webpack": "^4.46.0",
+        "webpack-cli": "^3.3.12",
+        "webpack-merge": "^5.8.0"
+    }
 }
